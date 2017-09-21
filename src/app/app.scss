@@ -14,3 +14,35 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.textWhite{
+    color:white;
+}
+.center-block{
+    display:block;
+    margin:0 auto;
+}
+.textPrimary{
+    color: color($colors,primary);
+}
+.text_small{
+    font-size:10px;
+}
+.text_md{
+    font-size:12px;
+}
+.background1{
+    background: color($colors,primary);
+  }
+  .border_left_right{
+      border-left:2px solid lightgray;
+      border-right:2px solid lightgray;
+  }
+  .border_left{
+    border-left:2px solid lightgray;
+  }
+  .progress{
+      width:100%;
+  }
+.margin_top_50{
+    margin-top:50%;
+}
