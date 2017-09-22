@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController} from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
+import { LoginPage } from '../login/login';
 
 
 @Component({
@@ -24,6 +25,15 @@ import { RegisterPage } from '../register/register';
 })
 export class WelcomePage {
     title: 'Welcome'
-  constructor() {}
+  constructor( public modalCtrl: ModalController ) {}
 
+  openRegisterModal() {
+    let myModal = this.modalCtrl.create(RegisterPage);
+    myModal.present();
+  }
+
+  openLoginModal() {
+    let myModal = this.modalCtrl.create(LoginPage);
+    myModal.present();
+  }
 }

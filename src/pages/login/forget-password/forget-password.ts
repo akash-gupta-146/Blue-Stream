@@ -2,16 +2,15 @@ import { Component } from '@angular/core';
 import { ViewController } from 'ionic-angular';
 
 @Component({
-  selector: 'register',
-  templateUrl: 'register.html'
+  selector: 'forget-password',
+  templateUrl: 'forget-password.html'
 })
-export class RegisterPage {
+export class ForgetPasswordPage {
 
-  constructor(public viewCtrl: ViewController) {
+  constructor(public viewCtrl: ViewController ) {
 
   }
   dismiss() {
     this.viewCtrl.dismiss();
   }
-
 }

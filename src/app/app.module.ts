@@ -9,6 +9,9 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { RegisterPage } from '../pages/register/register';
+import { LoginPage } from '../pages/login/login';
+import { ForgetPasswordPage } from '../pages/login/forget-password/forget-password';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { WelcomePage } from '../pages/welcome/welcome';
     MyApp,
     HomePage,
     ListPage,
+    RegisterPage,
+    LoginPage,
+    ForgetPasswordPage
   ],
   imports: [
     BrowserModule,
@@ -27,6 +33,9 @@ import { WelcomePage } from '../pages/welcome/welcome';
     MyApp,
     HomePage,
     ListPage,
+    RegisterPage,
+    LoginPage,
+    ForgetPasswordPage
   ],
   providers: [
     StatusBar,
