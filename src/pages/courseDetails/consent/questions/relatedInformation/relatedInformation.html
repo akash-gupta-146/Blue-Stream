@@ -1,0 +1,67 @@
+<ion-header>
+        <ion-navbar>
+            <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            </button>
+            <ion-title>Basic Life Support</ion-title>
+            <ion-buttons end>
+                <button ion-button (click)="openMyCoursesPage()">
+                <b><ion-icon name="power"></ion-icon></b>
+            </button>
+            </ion-buttons>
+        </ion-navbar>
+    </ion-header>
+    
+    <ion-content style="background:lightgray" padding>
+        <ion-card class="round-card">
+            <ion-card-content>
+                If the process seeking consent is to be a meaningful one, then refusal must be one of the patient's option. There are different forms of a refusal which must be acknowledge and understood.
+            </ion-card-content>
+        </ion-card>
+
+        <b text-center>
+                Please select the images below to look at various forms of refusal
+        </b>
+        <ion-row>
+            <ion-col col-6 (click)="openTestModel('A')">
+                    <ion-card class="round-card">
+                            <img src="http://blog.commlabindia.com/wp-content/uploads/2014/10/zoozoo-images-in-elearning.jpg">
+                        </ion-card>
+            </ion-col>
+            <ion-col col-6 (click)="openTestModel('B')">
+                    <ion-card class="round-card">
+                            <img src="https://thumbs.dreamstime.com/x/homem-de-neg%C3%B3cios-com-lupa-que-procura-moeda-20978916.jpg">
+                    </ion-card>
+            </ion-col>
+            <ion-col col-6 (click)="openTestModel('C')">
+                    <ion-card class="round-card">
+                            <img src="https://thumbs.dreamstime.com/b/little-3d-character-write-card-big-pen-16748319.jpg">
+                    </ion-card>
+            </ion-col>
+        </ion-row>
+
+
+
+    </ion-content>
+    
+    <ion-footer color="primary" no-padding>
+        <ion-toolbar no-padding>
+            <ion-row no-padding>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openButtonInformationPage()">
+            <ion-icon name="arrow-dropleft-circle"></ion-icon>
+        </button>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openConsentPage()">
+            <ion-icon name="home"></ion-icon>
+        </button>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openRefusalFormsPage()">
+                <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </button>
+                </ion-col>
+            </ion-row>
+        </ion-toolbar>
+    </ion-footer>

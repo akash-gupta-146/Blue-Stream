@@ -1,0 +1,46 @@
+<ion-header>
+        
+          <ion-navbar>
+            <ion-buttons start>
+              <button ion-button (click)="dismiss()">Close</button>
+            </ion-buttons>
+            <ion-title>Modals</ion-title>
+          </ion-navbar>
+        
+        </ion-header>
+    
+    <ion-content class="background15" padding>
+        <div class="center-block">
+                <div  large ion-button class="circle-button-exlg center-block textWhite" (click)="openTestModel(1)">
+                        <span class="textWhite">{{myParam}}</span>
+                </div>
+        </div>
+
+        <ion-card>
+            <ion-card-content>
+                    It should be recognised that a young person who has the capacity required to make other decision about theirr treatment.
+            </ion-card-content>
+        </ion-card>
+    </ion-content>
+    
+    <ion-footer color="primary" no-padding>
+        <ion-toolbar no-padding>
+            <ion-row no-padding>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openLearningOutcome()">
+            <ion-icon name="arrow-dropleft-circle"></ion-icon>
+        </button>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openConsentPage()">
+            <ion-icon name="home"></ion-icon>
+        </button>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openButtonInformationPage()">
+                <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </button>
+                </ion-col>
+            </ion-row>
+        </ion-toolbar>
+    </ion-footer>

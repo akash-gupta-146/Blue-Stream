@@ -1,0 +1,85 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            </button>
+        <ion-title>Basic Life Support</ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="openMyCoursesPage()">
+                <b><ion-icon name="power"></ion-icon></b>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content style="background:lightgray">
+    <ion-card padding>
+        <b>The refusal of treatment by a Gillick component minor can be overridden by:</b>
+        
+        <ion-item >
+            <ion-label>Option 1</ion-label>
+            <ion-checkbox (click)="show=false;"></ion-checkbox>
+        </ion-item>
+
+        <ion-item >
+            <ion-label>Option 2</ion-label>
+            <ion-checkbox (click)="show=false;"></ion-checkbox>
+        </ion-item>
+        <ion-item >
+            <ion-label>Option 3</ion-label>
+            <ion-checkbox (click)="show=false;" ></ion-checkbox>
+        </ion-item>
+
+        <ion-item >
+            <ion-label>Option 4</ion-label>
+            <ion-checkbox (click)="show=false;"></ion-checkbox>
+        </ion-item>
+        
+        <ion-row radio-group>
+            <ion-col col-6>
+                <button ion-button small color="primary" class="float_right" (click)="show=true">
+                                Confirm
+                            </button>
+            </ion-col>
+            <ion-col col-6>
+                <button ion-button small color="primary" class="float_left">
+                                Reset
+                            </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-card padding *ngIf="show">
+        <div style="font-size:60px" text-center>
+            <ion-icon name="checkmark-circle" color="light_green"></ion-icon>
+        </div>
+        Correct, the refusal of treatment by a Gillick cometent mirror can be overridden, even if the minor is between the age of
+        16 and 18 years. This is done by either the person with parantal responsibility or the court, but such decision can
+        only be taken if it is thought to be in the minor's best interests.
+
+        <br>
+        <br> It should be recognised that a young person who has the capacity required to make other decision about theirr
+        treatment.
+    </ion-card>
+</ion-content>
+
+<ion-footer color="primary" no-padding>
+    <ion-toolbar no-padding>
+        <ion-row no-padding>
+            <ion-col col-4 no-padding>
+                <button ion-button icon-only clear full text-center color="white" (click)="openTest1Page()">
+            <ion-icon name="arrow-dropleft-circle"></ion-icon>
+        </button>
+            </ion-col>
+            <ion-col col-4 no-padding>
+                <button ion-button icon-only clear full text-center color="white" (click)="openConsentPage()">
+            <ion-icon name="home"></ion-icon>
+        </button>
+            </ion-col>
+            <ion-col col-4 no-padding>
+                <!-- <button ion-button icon-only clear full text-center color="white" >
+                <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </button> -->
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-footer>

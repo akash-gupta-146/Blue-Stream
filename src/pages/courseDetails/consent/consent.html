@@ -1,0 +1,129 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Anaphylaxis</ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="openMyCoursesPage()">
+            <b><ion-icon name="power"></ion-icon></b>
+        </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <!-- <ion-list>
+        <ion-list-header>
+            Learning Outcomes
+        </ion-list-header>
+        <ion-card>
+            <ion-card-header class="paragraph">After completing this section you should be able to:</ion-card-header>
+            <ion-card-content>
+                <ul>
+                    <li>Understand the importance of consent</li>
+                    <li>Explain why consent is needed</li>
+                    <li>Define what consent means</li>
+                    <li>Understand the right of the patient when asking for consent</li>
+                </ul>
+            </ion-card-content>
+
+        </ion-card>
+    </ion-list> -->
+
+    <ion-item no-padding>
+            <div text-center><b>When is concent needed?</b><br>
+                <span class="text_small textGray">(21 topics, 29 hours of content)</span>
+            </div>
+            <ion-list>
+                <ion-list-header no-lines>
+                    Introduction
+                </ion-list-header>
+                <ion-item no-line-top >
+                    <div class="circle-text" item-left>
+                        1
+                    </div>
+                    <div>Learning Outcomes</div>
+                    <p class="text_small textGray">Related Points (4)</p>
+                    <button item-end ion-button outline (click)="openLearningOutcomePage()">Preview</button>
+                </ion-item>
+                <ion-item no-line-top >
+                    <div class="circle-text" item-left>
+                        2
+                    </div>
+                    <div>Information for consent</div>
+                    <p class="text_small textGray">Image Details (4)</p>
+                    <button item-end ion-button outline (click)="openInformationConsentPage()">Preview</button>
+                </ion-item>
+                <ion-item no-line-top>
+                    <div class="circle-text" item-left>
+                        3
+                    </div>
+                    <div>Provision of Information</div>
+                    <p class="text_small textGray">Text (4)</p>
+                    <button item-end ion-button outline (click)="openButtonInformationPage()">Preview</button>
+                </ion-item>
+                <ion-list-header no-lines>
+                    Fundamentals
+                </ion-list-header>
+                <ion-item no-line-top>
+                    <div class="circle-text" item-left>
+                        1
+                    </div>
+                    <div>Related Information</div>
+                    <p class="text_small textGray">Selectable topics (4)</p>
+                    <button item-end ion-button outline (click)="openRelatedInformationPage()">Preview</button>
+                </ion-item>
+                <ion-item no-line-top>
+                    <div class="circle-text" item-left>
+                        2
+                    </div>
+                    <div>Forms of Refusal</div>
+                    <p class="text_small textGray">Images (3)</p>
+                    <button item-end ion-button outline (click)="openRefusalFormsPage()">Preview</button>
+                </ion-item>          
+                <ion-list-header no-lines>
+                        Knowledge Test
+                </ion-list-header>
+                <ion-item no-line-top>
+                    <div class="circle-text" item-left>
+                        1
+                    </div>
+                    <div>Refusal of treatment</div>
+                    <p class="text_small textGray">True/False</p>
+                    <button item-end ion-button outline (click)="openTest1Page()">Conduct</button>
+                </ion-item> 
+                <ion-item no-line-top>
+                    <div class="circle-text" item-left>
+                        2
+                    </div>
+                    <div>Provision treatment test</div>
+                    <p class="text_small textGray">Select the correct choice</p>
+                    <button item-end ion-button outline (click)="openTest2Page()">Conduct</button>
+                </ion-item> 
+            </ion-list>
+    </ion-item>
+
+</ion-content>
+
+<ion-footer color="primary" no-padding>
+    <ion-toolbar no-padding>
+        <ion-row no-padding>
+            <ion-col col-4 no-padding>
+                <button ion-button icon-only clear full text-center color="white" (click)="goToBack()">
+        <ion-icon name="arrow-dropleft-circle"></ion-icon>
+    </button>
+            </ion-col>
+            <ion-col col-4 no-padding>
+                <button ion-button icon-only clear full text-center color="white" (click)="openCourseDetailsPage()">
+        <ion-icon name="home"></ion-icon>
+    </button>
+            </ion-col>
+            <ion-col col-4 no-padding>
+                <button ion-button icon-only clear full text-center color="white" (click)="openLearningOutcomePage()">
+            <ion-icon name="arrow-dropright-circle"></ion-icon>
+        </button>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-footer>

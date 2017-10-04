@@ -12,7 +12,7 @@
           <img class="center-block" src="assets/images/logo2.png" width="500px">
           <!-- Login with email -->
           <ion-list no-margin>
-            <ion-item no-padding no-lines>
+            <ion-item no-padding no-line-top>
               <ion-label floating>Username or e-mail address</ion-label>
               <ion-input type="text"></ion-input>
             </ion-item>
@@ -21,25 +21,25 @@
               <ion-input type="password"></ion-input>
             </ion-item>
             <button ion-button clear small no-padding>
-              <span class="text_small colorPrimary" >Forget Password?</span>
+              <span class="text_small colorPrimary">Forget Password?</span>
             </button>
           </ion-list>
         
-          <button color="light_green" ion-button block>Sign in</button>
+          <button color="light_green" ion-button full (click)="signIn('Signed In Successfully')">Sign in</button>
           <!-- /Login with email -->
           <!-- Login with google and facebook block    -->
           <ion-badge class="center-block box-shadow" text-center margin-top>or sign in with</ion-badge>
           <ion-row margin-top>
             <ion-col>
-              <button ion-button full item-end icon-left color="facebook">
+              <button ion-button full item-end icon-left color="facebook" (click)="signIn('Signed In using Facebook')">
                 <ion-icon name="logo-facebook" icon-left></ion-icon>
                 Facebook
               </button>
             </ion-col>
             <ion-col>
-              <button ion-button full item-end icon-left color="google">
+              <button ion-button full item-end icon-left color="google" (click)="signIn('Signed In Using Google')">
                 <ion-icon name="logo-googleplus"></ion-icon>
-                Facebook
+                Google
               </button>
             </ion-col>
           </ion-row>

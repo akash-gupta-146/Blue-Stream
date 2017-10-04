@@ -5,8 +5,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { MyCoursesPage } from '../pages/myCourses/myCourses';
+import { BuyCoursePage } from '../pages/buyCourse/buyCourse';
+import { ConsentPage } from '../pages/courseDetails/consent/consent';
+import { sidebarSubscribedCoursesPage } from '../pages/sidebarPages/sidebarSubscribedCourses';
+import { SidebarCourseCategoriesPage } from '../pages/sidebarPages/sidebarCourseCategories';
+import { SidebarNewCoursesPage } from '../pages/sidebarPages/sidebarNewCourses';
+import { ProfilePage } from '../pages/profile/profile';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,15 +22,18 @@ export class MyApp {
 
   rootPage: any = WelcomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon:any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Categories', component: SidebarCourseCategoriesPage, icon: 'http://icons.iconarchive.com/icons/zerode/plump/256/Folder-Office-icon.png' },
+      { title: 'My Courses', component: sidebarSubscribedCoursesPage, icon: 'http://www.clker.com/cliparts/s/M/E/S/m/F/stack-of-paperbacks-md.png' },
+      { title: 'New Courses' , component: SidebarNewCoursesPage, icon: 'http://www.iconarchive.com/download/i85595/graphicloads/100-flat/new.ico'},
+      { title: 'My Profile', component: ProfilePage, icon: 'http://files.softicons.com/download/toolbar-icons/blue-bits-icons-by-icojam/ico/1_001.ico' },
+      { title: 'Log Out' , component: WelcomePage, icon: 'http://www.iconarchive.com/download/i86072/graphicloads/100-flat-2/outside.ico'}
     ];
 
   }

@@ -1,13 +1,30 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
+  <!-- <ion-header>
+    <ion-toolbar class="sidebar-header" no-padding>
+      <div class="sidebar-background-image">
+      <img class="circle-center-img" src="assets/images/pic.png">
+      <div class="highlight">
+        <div class="textWhite text_lg" margin-top><b>Asrar Rashid</b></div>
+        <span class="textWhite text_small">Consultant Paediatric Intensivist</span>
+      </div>
+    </div>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
+  <ion-header class="csProfileHeader">
+      <div class="csAccBgImg csHeight160">
+      <div class="center-block csProfileHeader">
+        <div class="csAccBgImg">
+          <br><img src="assets/images/pic.png" class="csAccImg center-block" margin-top>
+          <div class="csAccName textWhite" text-center>Asrar Rashid</div>
+        </div>
+      </div>
+      </div>
+    </ion-header>
 
-  <ion-content>
+  <ion-content class="sidebar-background">
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <button class="csStrip" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <img [src]="p.icon" item-left height="25px" width="25px">
         {{p.title}}
       </button>
     </ion-list>

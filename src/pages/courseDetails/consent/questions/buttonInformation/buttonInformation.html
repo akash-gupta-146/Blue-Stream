@@ -1,0 +1,46 @@
+<ion-header>
+        <ion-navbar>
+            <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            </button>
+            <ion-title>Basic Life Support</ion-title>
+            <ion-buttons end>
+                <button ion-button (click)="openMyCoursesPage()">
+                <b><ion-icon name="power"></ion-icon></b>
+            </button>
+            </ion-buttons>
+        </ion-navbar>
+    </ion-header>
+    
+    <ion-content padding>
+        <h4 text-center>Please select the numbered buttons for information on competency to given consent.</h4>
+        <div margin-top>
+            <button ion-button full color="color1" (click)="openTestModel(1)">Competent Adults</button>
+            <button ion-button full color="color1" (click)="openTestModel(2)">Incompetent Patients</button>
+            <button ion-button full color="color1" (click)="openTestModel(3)">Minors</button>
+            <button ion-button full color="color1" (click)="openTestModel(4)">End of Life Decision Making</button>
+        </div>
+
+    </ion-content>
+    
+    <ion-footer color="primary" no-padding>
+        <ion-toolbar no-padding>
+            <ion-row no-padding>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openInformationConsentPage()">
+            <ion-icon name="arrow-dropleft-circle"></ion-icon>
+        </button>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openConsentPage()">
+            <ion-icon name="home"></ion-icon>
+        </button>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openRelatedInformationPage()">
+                <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </button>
+                </ion-col>
+            </ion-row>
+        </ion-toolbar>
+    </ion-footer>

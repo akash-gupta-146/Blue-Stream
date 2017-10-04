@@ -1,0 +1,54 @@
+<ion-header>
+        <ion-navbar>
+            <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            </button>
+            <ion-title>Basic Life Support</ion-title>
+            <ion-buttons end>
+                <button ion-button (click)="openMyCoursesPage()">
+                <b><ion-icon name="power"></ion-icon></b>
+            </button>
+            </ion-buttons>
+        </ion-navbar>
+    </ion-header>
+    
+    <ion-content style="background:lightgray">
+        <ion-list>
+            <ion-list-header>
+                Learning Outcomes
+            </ion-list-header>
+            <ion-card>
+                <ion-card-header class="paragraph">After completing this section you should be able to</ion-card-header>
+                <ion-card-content>
+                    <ul>
+                        <li>Understand the importance of consent</li>
+                        <li>Explain why consent is needed</li>
+                        <li>Define what consent means</li>
+                        <li>Understand the right of the patient when asking for consent</li>
+                    </ul>
+                </ion-card-content>
+            </ion-card>
+        </ion-list>
+    </ion-content>
+    
+    <ion-footer color="primary" no-padding>
+        <ion-toolbar no-padding>
+            <ion-row no-padding>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="goToBack()">
+            <ion-icon name="arrow-dropleft-circle"></ion-icon>
+        </button>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openConsentPage()">
+            <ion-icon name="home"></ion-icon>
+        </button>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <button ion-button icon-only clear full text-center color="white" (click)="openInformationConsentPage()">
+                <ion-icon name="arrow-dropright-circle"></ion-icon>
+            </button>
+                </ion-col>
+            </ion-row>
+        </ion-toolbar>
+    </ion-footer>
