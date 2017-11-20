@@ -10,24 +10,24 @@
 <ion-content>
         <ion-list class="list-view">
                 <ion-list-header>
-                    GP Practice
+                    {{category}}
                 </ion-list-header>
-                <ion-item>
+                <ion-item *ngFor="let course of courselist">
                     <ion-thumbnail item-start>
-                        <img src="http://americasbestcareplus.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-25-at-11.25.35-AM.png">
+                        <img [src]='course.img'>
                     </ion-thumbnail>
-                    <span class="title">Anaphylaxis</span>
-                    <ion-badge text-right class="text_small float_right">$200.00</ion-badge>
+                    <span class="title">{{ course.name }}</span>
+                    <ion-badge text-right class="text_small float_right">{{ course.price }}</ion-badge>
                     <div class="rating">
                         <ion-icon name="star" color="inprogress"></ion-icon>
                         <ion-icon name="star" color="inprogress"></ion-icon>
                         <ion-icon name="star" color="inprogress"></ion-icon>
                         <ion-icon name="star" color="inprogress"></ion-icon>
                         <ion-icon name="star-half" color="inprogress"></ion-icon>
-                        <ion-badge class="text_small float_right" >3 Days</ion-badge>
+                        <ion-badge class="text_small float_right" >{{ course.timeLeft }} Days</ion-badge>
                     </div>
                 </ion-item>
-                <ion-item>
+                <!-- <ion-item>
                     <ion-thumbnail item-start>
                         <img src="http://www.localgov.co.uk/Library/images/teaser/fraud1.gif">
                     </ion-thumbnail>
@@ -46,7 +46,7 @@
                     <ion-thumbnail item-start>
                         <img src="http://www.healthline.com/hlcmsresource/images/imce/cytology-exam-of-urine_thumb.jpg">
                     </ion-thumbnail>
-                    <span class="title">Cytology</span>
+                    <span class="title"></span>
                     <ion-badge text-right class="text_small float_right">$230.00</ion-badge>
                     <div class="progress">
                             <ion-icon name="star" color="inprogress"></ion-icon>
@@ -191,7 +191,7 @@
                                 <ion-icon name="star-half" color="inprogress"></ion-icon>
                             <ion-badge class="text_small float_right">1 Days</ion-badge>
                         </div>
-                    </ion-item>
+                    </ion-item> -->
             </ion-list>
 </ion-content>
       
